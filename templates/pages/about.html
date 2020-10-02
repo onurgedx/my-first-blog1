@@ -1,0 +1,110 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+<body class="bg-dark">
+
+    
+
+    <div class="card w-50 mx-auto bg-success pt-2">
+        <h2 class="card-head text-center text-light">Küçüklügümden bir kaç kesit</h2>
+    </div>
+    <div id="slider4Kontrolicin" class="carousel slide carousel-fade my-0 w-75 mx-auto" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <!-- aktif olacak olanın classına active ekliyoruz-->
+            <li data-target="#slider4Kontrolicin" data-slide-to="0" class="active"></li>
+            <!--data-slide-to ile ilişkilendirme işlemi yapıyoruz 0 1 2 index -->
+            <li data-target="#slider4Kontrolicin" data-slide-to="1"></li>
+            <li data-target="#slider4Kontrolicin" data-slide-to="2"></li>
+            <li data-target="#slider4Kontrolicin" data-slide-to="3"></li>
+          <!--  <li data-target="#slider4Kontrolicin" data-slide-to="4"></li>
+            
+            <li data-target="#slider4Kontrolicin" data-slide-to="5"></li>-->
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'img/öyleşirinimK.jpg' %}" alt="" class="d-block w-100 rounded">
+                <div class="carousel-caption">
+                    <h5>Ben ve Seda</h5>
+                    <p>Soldaki ben</p>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/muzurlukyapıyorumK.jpg' %}" alt="" class="d-block w-100  rounded">
+
+                <div class="carousel-caption">
+                    <h5></h5>
+                    <p>Kardeşimi eğlendirirken.</p>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/ilkçetemK.jpg' %}" alt="" class="d-block w-100 rounded">
+
+                <div class="carousel-caption">
+                    <h5>Çetem</h5>
+                    <p>Üye sayısı : 2</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/kumandabendeK.jpg' %}" alt="" class="d-block w-100 rounded">
+
+                <div class="carousel-caption">
+                    <h5></h5>
+                    <p>Kumanda kimde dikkatiniz çekerim.</p>
+                </div>
+            </div>
+             <!--
+            <div class="carousel-item">
+                <img src="{% static 'img/beratbensinemaK.jpg' %}" alt="" class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h5></h5>
+                    <p>Cinema arkadaşım</p>
+                </div>
+            </div>
+           
+            <div class="carousel-item">
+                <img src="{% static 'img/ecek.jpg' %}" alt="" class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h5></h5>
+                    <p>ekü</p>
+                </div>
+            </div>-->
+        </div>
+
+        <a href="#slider4Kontrolicin" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#slider4Kontrolicin" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <div>
+        <div class="card my-2 w-75 mx-auto">
+            <div class="w-50 mx-auto">
+            <img src="{% static 'img/ben1k.jpg' %}" alt="" class="card-img-top rounded">
+            <hr>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Merhaba ben Onur . Hatay'ın Kırıkhan ilçesinde doğdum ve büyüdüm. İlkokulumu Kırıkhan'da 75.Yıl İlköğretim okulunda tamamladım.
+                    Liseyi Antakya'daki Nihal Turğut Anlar Anadolu Ögretmen Lisesinde  okudum.Şu anda Gazi Üniversite'sinde Teknoloji Fakültesinin bir programı olan Elektrik Elektronik Mühendisligi 4. sınıf ögrencisiyim.
+                    Oyun oynamayı bilgisayar ile ilk tanıştıgımdan beri severim. Oyun geliştirmeye ne zaman ilgi duymaya başladıgımı hatırlamıyorum. Kendi çapımda takılıyorum ve oyunlara sanat gözüyle bakmaya çalışıyorum .
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+
+{% endblock %}
