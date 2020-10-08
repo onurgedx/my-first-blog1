@@ -14,17 +14,20 @@ import os #templates yerini belirtirken kullandık o yüzden ekliyorum
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+#BASE_DIR = Path(__file__).resolve(strict=True).parent.parent  #normali buydu ama aşşagıdaki yaptım gerekliymiş biz degiştirdigimiz içinbişetleri bu önemli
+BASE_DIR = Path(__file__).resolve(strict = True).parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+                #SECRET KEY I GİZLEMEM LAZIM BİR DOSYAYA BUNU ATIP ORDAN ÇEKMELİYİM DAHA  DOGRU BU
 SECRET_KEY = 'g9(c+zsvll9jt1wsegcymvfq-+1k5c9b)b$$ome^$5k_2-e&!u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+#DEBUG = True #BURAYI ÇIKARITIYORUZ ÇÜNKÜ DEVELOPMENT VE PRODUCTİON KISIMLARINDA FARKLI BURASI
 
 ALLOWED_HOSTS = ['*']
 
@@ -121,8 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR,'static')  #BURASI DA DEGİŞKEN
 
-STATICFILES_DIRS=[
-                        os.path.join(BASE_DIR,"static"),
-                        '/var/www/static/',
-                    ]
+#STATICFILES_DIRS=[os.path.join(BASE_DIR,"static"), '/var/www/static/', ]   #BURASI DA DEGİŞKEN
+                        
+                       
+                                  
